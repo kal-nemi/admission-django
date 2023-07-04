@@ -1,0 +1,26 @@
+<!-- This is the template for student admission -->
+<!-- This template is used to render the form for student admission -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission</title>
+</head>
+<body>
+    <h1>
+        Student Admission
+    </h1>  
+
+    <!-- //form for student admission using django form -->
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Submit">
+    </form>
+
+    
+</body>
+</html>
